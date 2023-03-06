@@ -20,3 +20,11 @@ $fontSecondary: '';
 $green: #15786C;
 $blue: #121B25;
 $textGrey: #D6D6D6;
+
+//Mixins
+@mixin textGrey{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  color: $textGrey;
+}

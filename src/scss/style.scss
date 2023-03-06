@@ -3,6 +3,12 @@
 @import 'reset';
 //@import "fonts"; //разблокировать если есть внешние шрифты, использовать с функцией fonts
 @import 'global';
+
+.text{
+  @include textGrey;
+}
+
 @import "header";
+@import "hero";
 
 
