@@ -13,7 +13,19 @@ export function isWebp() {
     document.documentElement.classList.add(className)
   });
 }
+export function burger() {
+  const burger = document.querySelector('.menu__icon')
+  const menu = document.querySelector('.menu')
+  const body = document.body
 
+  if(burger && menu){
+    burger.addEventListener('click', ()=>{
+      burger.classList.toggle('--active')
+      menu.classList.toggle('--active')
+      body.classList.toggle('lock')
+    })
+  }
+}
 
 
 

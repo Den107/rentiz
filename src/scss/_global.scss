@@ -23,6 +23,8 @@
 }
 
 body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: $blue;
   &.lock {
     overflow: hidden;
   }
