@@ -1,6 +1,7 @@
 .hero {
   margin-top: clamp(1.25rem, 0.25rem + 5vw, 4.688rem);
-
+  position: relative;
+  padding-bottom: clamp(1.25rem, -0.023rem + 6.36vw, 5.625rem);
   &__container {
     display: flex;
     justify-content: space-between;
@@ -48,9 +49,12 @@
 
   &__deco {
     position: absolute;
-    bottom: -240px;
+    bottom: -150px;
     right: 0;
     z-index: -1;
+    @media (max-width: 576px) {
+      height: 300px;
+    }
   }
 }
 

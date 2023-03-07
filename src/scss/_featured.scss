@@ -1,0 +1,15 @@
+.featured{
+  padding-top: clamp(1.25rem, -0.023rem + 15vw, 5.625rem);
+
+  &__box{
+    margin-top: clamp(1.875rem, 1.307rem + 2.84vw, 3.438rem);
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    overflow: auto;
+  }
+  &__item{
+    flex: 0 0 auto;
+  }
+}

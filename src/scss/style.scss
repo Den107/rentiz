@@ -7,8 +7,12 @@
 .text{
   @include textGrey;
 }
+.title{
+  @include title
+}
 
 @import "header";
 @import "hero";
+@import "featured";
 
 
