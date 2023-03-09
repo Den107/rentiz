@@ -1,13 +1,13 @@
 import {Swiper} from "swiper";
 
-export function slider() {
+export function popularSlider() {
     const swiper = new Swiper('.popular-slider', {
         spaceBetween: 20,
         slidesPerView: 1,
         loop: true,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.popular-slider-next',
+            prevEl: '.popular-slider-prev',
         },
         breakpoints: {
             992: {
@@ -17,5 +17,18 @@ export function slider() {
                 slidesPerView: 2
             }
         }
+    });
+}
+
+export function reviewsSlider() {
+    const swiper = new Swiper('.slider-reviews', {
+        spaceBetween: 20,
+        slidesPerView: 1,
+        autoHeight: true,
+        loop: false,
+        navigation: {
+            nextEl: '.slider-reviews-next',
+            prevEl: '.slider-reviews-prev',
+        },
     });
 }
