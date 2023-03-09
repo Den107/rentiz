@@ -32,3 +32,20 @@ export function reviewsSlider() {
         },
     });
 }
+
+export function gallerySlider() {
+    const galleryItems = document.querySelectorAll('.gallery__item')
+
+    if (galleryItems.length > 0) {
+        galleryItems.forEach(item => {
+            new Swiper(item, {
+                slidesPerView: 1,
+                loop: true,
+                autoplay: {
+                    delay: 5000
+                },
+                effect: 'fade'
+            })
+        })
+    }
+}

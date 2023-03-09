@@ -660,12 +660,18 @@ body.lock {
 
 .reviews {
   position: relative;
+  padding-bottom: clamp(1.875rem, -1.534rem + 17.05vw, 11.25rem);
 }
 .reviews .reviews-deco {
   position: absolute;
   top: -500px;
   left: 0;
   z-index: -1;
+}
+@media (max-width: 479.98px) {
+  .reviews .reviews-deco {
+    width: 300px;
+  }
 }
 .reviews .swiper-wrapper {
   align-items: flex-start;
@@ -727,4 +733,61 @@ body.lock {
 
 .slider-reviews-prev {
   transform: translateY(-3px) rotate(180deg);
+}
+
+.gallery {
+  background: linear-gradient(270deg, #1A242F 0.01%, rgba(26, 36, 47, 0) 82.97%);
+  padding: clamp(1.875rem, -1.08rem + 14.77vw, 10rem) 0;
+}
+.gallery__container {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+}
+@media (max-width: 991.98px) {
+  .gallery__container {
+    flex-direction: column;
+  }
+}
+.gallery__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 50.7042253521%;
+}
+@media (max-width: 991.98px) {
+  .gallery__box {
+    width: 100%;
+  }
+}
+.gallery__item {
+  flex: 0 0 47%;
+  aspect-ratio: 7/11;
+}
+.gallery__item .swiper-wrapper {
+  position: relative;
+}
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 991.98px) {
+  .gallery__title {
+    max-width: 520px;
+  }
+}
+.gallery__text {
+  margin-top: 22px;
+}
+.gallery__link {
+  margin-top: 45px;
+  padding: 22px 42px;
+  background-color: #15786C;
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: capitalize;
+  display: inline-block;
 }

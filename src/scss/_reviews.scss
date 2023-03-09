@@ -1,11 +1,17 @@
 .reviews {
   position: relative;
-  .reviews-deco{
+  padding-bottom: clamp(1.875rem, -1.534rem + 17.05vw, 11.25rem);
+
+  .reviews-deco {
     position: absolute;
     top: -500px;
     left: 0;
     z-index: -1;
+    @media (max-width: $breakpoint480) {
+      width: 300px;
+    }
   }
+
   .swiper-wrapper {
     align-items: flex-start;
   }
